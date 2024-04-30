@@ -8,7 +8,7 @@ export const initSocket = async () => {
     transports: ["websocket"],
   };
   const backendUrl =
-    process.env.REACT_APP_BACKEND_URL || "http://localhost:5000";
+    process.env.REACT_APP_BACKEND_URL || "https://co-script-server.vercel.app";
 
   return io(backendUrl, options);
 };
