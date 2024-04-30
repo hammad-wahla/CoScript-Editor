@@ -7,7 +7,6 @@ export const initSocket = async () => {
     timeout: 10000,
     transports: ["websocket"],
   };
-  // const backendUrl = "https://co-script-server.vercel.app/";
   const backendUrl = "http://localhost:5000";
 
   return io(backendUrl, options);

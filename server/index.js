@@ -62,5 +62,9 @@ io.on("connection", (socket) => {
   });
 });
 
+app.get("/checking-server", (req, res) => {
+  res.send("Server is working fine!");
+});
+
 const PORT = process.env.PORT || 5000;
 server.listen(PORT, () => console.log(`Listening on port ${PORT}`));
